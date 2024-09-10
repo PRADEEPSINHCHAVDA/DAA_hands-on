@@ -3,6 +3,7 @@
 ![image](https://github.com/user-attachments/assets/9d45865e-a96b-415e-b4b9-c8c3cbe50e32)
 
 3:Find polynomials that are upper and lower bounds on your curve from #2. From this specify a big-O, a big-Omega, and what big-theta is.
+
 Ans:-To find upper and lower bounds, we can fit polynomials to the data 
 and use them to determine Big-O, Big-Omega, and Big-Theta.
  Fit polynomial curve
@@ -35,3 +36,9 @@ function. So, the lower bound is Ω(n^2).
 
 Big-Theta: Since upper and lower bounds are the same, Big-Theta is 
 Θ(n^2)
+
+4:Find the approximate (eye ball it) location of "n_0" . Do this by zooming in on your plot and indicating on the plot where n_0 is and why you picked this value. Hint: I should see data that does not follow the trend of the polynomial you determined in #2
+
+Ans:![image](https://github.com/user-attachments/assets/b4fcb148-af63-4829-ad37-b0fec96acaaf)
+
+The plot shows a clear deviation at \(n_0 = 300\), where the actual timing data starts diverging from the polynomial fit. This suggests a shift in behavior due to system limitations, overhead, or increased algorithmic complexity. By observing this point, we identify the limits of the polynomial model's accuracy. Beyond \(n_0\), the method behaves differently, indicating additional factors the model couldn't capture.
