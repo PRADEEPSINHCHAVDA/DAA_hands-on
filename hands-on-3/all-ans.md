@@ -45,12 +45,23 @@ Ans:
 The plot shows a clear deviation at \(n_0 = 300\), where the actual timing data starts diverging from the polynomial fit. This suggests a shift in behavior due to system limitations, overhead, or increased algorithmic complexity. By observing this point, we identify the limits of the polynomial model's accuracy. Beyond \(n_0\), the method behaves differently, indicating additional factors the model couldn't capture.
 
 4.1:If I modified the function to be:
-x = f(n)
-x = 1;
-y = 1;
-for i = 1:n
-for j = 1:n
-x = x + 1;
-   y = i + j;
 
-4. Will this increate how long it takes the algorithm to run (e.x. you are timing the function like in #2)?
+x = f(n)
+
+x = 1;
+
+y = 1;
+
+for i = 1:n
+
+for j = 1:n
+
+x = x + 1;
+
+   y = i + j;
+   
+ Will this increate how long it takes the algorithm to run (e.x. you are timing the function like in #2)?
+
+Ans:
+
+Adding y = i + j; to the nested loops introduces an additional constant-time operation inside each iteration. However, this change does not affect the overall time complexity of the algorithm, which remains O(n²) due to the nested loops. While the total execution time will increase slightly, this additional operation has a minimal impact compared to the time spent in the nested loops.
