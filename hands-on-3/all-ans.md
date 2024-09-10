@@ -67,4 +67,5 @@ Ans:
 Adding y = i + j; to the nested loops introduces an additional constant-time operation inside each iteration. However, this change does not affect the overall time complexity of the algorithm, which remains O(n²) due to the nested loops. While the total execution time will increase slightly, this additional operation has a minimal impact compared to the time spent in the nested loops.
 
 5. Will it effect your results from #1?
+
 Ans:adding y = i + j; will not affect the overall runtime complexity of the function.
