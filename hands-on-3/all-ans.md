@@ -5,14 +5,14 @@
 3:Find polynomials that are upper and lower bounds on your curve from #2. From this specify a big-O, a big-Omega, and what big-theta is.
 Ans:-To find upper and lower bounds, we can fit polynomials to the data 
 and use them to determine Big-O, Big-Omega, and Big-Theta.
-# Fit polynomial curve
+ Fit polynomial curve
 p = polyfit(n_values, times, 2);
 fitted_curve = polyval(p, n_values);
-# Plot the fitted curve
+ Plot the fitted curve
 hold on;
 plot(n_values, fitted_curve, 'r-', 'LineWidth', 2);
 legend('Data', 'Fitted Curve');
-# Display the polynomial coefficients
+ Display the polynomial coefficients
 disp('Polynomial Coefficients:');
 disp(p);
 Now, to find the upper and lower bounds, we can use the coefficients 
