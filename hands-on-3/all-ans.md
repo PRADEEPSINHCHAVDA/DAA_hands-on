@@ -43,3 +43,14 @@ Ans:
 ![image](https://github.com/user-attachments/assets/b4fcb148-af63-4829-ad37-b0fec96acaaf)
 
 The plot shows a clear deviation at \(n_0 = 300\), where the actual timing data starts diverging from the polynomial fit. This suggests a shift in behavior due to system limitations, overhead, or increased algorithmic complexity. By observing this point, we identify the limits of the polynomial model's accuracy. Beyond \(n_0\), the method behaves differently, indicating additional factors the model couldn't capture.
+
+4.1:If I modified the function to be:
+x = f(n)
+x = 1;
+y = 1;
+for i = 1:n
+for j = 1:n
+x = x + 1;
+   y = i + j;
+
+4. Will this increate how long it takes the algorithm to run (e.x. you are timing the function like in #2)?
